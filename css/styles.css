@@ -236,3 +236,10 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+
+/**
+ * COLORS
+ */
+.mdl-layout__header {
+  background-color: rgb(255,194,206)
+}
