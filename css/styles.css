@@ -10,14 +10,6 @@ body::before {
     top: 0;
     position: fixed;
 }
-@media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
-       (max-width: 512px)  and (min-resolution: 1.5dppx),
-       (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
-       (max-width: 1024px) and (max-resolution: 1.5dppx) {
-  body::before {
-    background-image: url('../images/standing_in_bushes_1024.jpg');
-  }
-}
 @media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
        (min-width: 513px)  and (max-width: 1024px) and (min-resolution: 1.5dppx),
        (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
@@ -119,10 +111,22 @@ html, body {
   z-index: 999;
 }
 
-.mdl-demo .mdl-layout__content section:not(:last-of-type) {
+.mdl-demo .mdl-layout__content section {
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
+
+.mdl-demo .mdl-layout__content section:first-of-type {
+  position: relative;
+  margin-top: 200px;
+}
+
+.mdl-demo .mdl-layout__content section:last-of-type {
+  position: relative;
+  margin-bottom: 200px;
+}
+
 .mdl-demo section.section--center {
   max-width: 860px;
 }
