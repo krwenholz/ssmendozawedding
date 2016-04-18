@@ -33,15 +33,18 @@
     </style>
     <script>
 		jQuery(function(){
-      jQuery('#camera_wrap_1').camera({
+      jQuery('#camera_wrap_0').camera({
         fx: 'scrollRight',
         loader: 'none',
         navigation: 'false',
         pagination: 'false'
       });
-      jQuery('#camera_wrap_2').camera({
+      jQuery('#camera_wrap_1').camera({
         fx: 'scrollLeft',
-        loader: 'none'
+        loader: 'none',
+        navigation: 'false',
+        pagination: 'false',
+        time: 2500
       });
     });
 	</script>
@@ -56,14 +59,11 @@
       <main class="mdl-layout__content">
         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
           <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-            <div class="camera_wrap" id="camera_wrap_1">
+            <div class="camera_wrap" id="camera_wrap_0">
               <div data-src="images/meadow_hug_sitting.jpg"></div>
               <div data-src="images/sitting_background.jpg"></div>
               <div data-src="images/standing_bw.jpg"></div>
               <div data-src="images/sitting_kiss.jpg"></div>
-              <div data-src="images/IMG_3325.jpg"></div>
-              <div data-src="images/IMG_1344.jpg"></div>
-              <div data-src="images/IMG_1058.jpg"></div>
             </div>
           </header>
           <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
@@ -112,7 +112,11 @@
             </div>
           </div>
           <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-            <img src="images/sam_holding_shelby.jpg" style="width:220px;height:293px">
+            <div class="camera_wrap" id="camera_wrap_1">
+              <div data-src="images/IMG_3325.jpg"></div>
+              <div data-src="images/IMG_1344.jpg"></div>
+              <div data-src="images/IMG_1058.jpg"></div>
+            </div>
           </header>
         </section>
         <footer class="mdl-mega-footer">

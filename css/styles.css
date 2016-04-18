@@ -15,7 +15,7 @@ body::before {
        (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
   body::before {
-    background-image: url('../images/standing_in_bushes_2048.jpg');
+    background-image: url('../images/sam_holding_shelby.jpg');
   }
 }
 
@@ -115,16 +115,6 @@ html, body {
   position: relative;
   margin-bottom: 100px;
   margin-top: 100px;
-}
-
-.mdl-demo .mdl-layout__content section:first-of-type {
-  position: relative;
-  margin-top: 200px;
-}
-
-.mdl-demo .mdl-layout__content section:last-of-type {
-  position: relative;
-  margin-bottom: 200px;
 }
 
 .mdl-demo section.section--center {
