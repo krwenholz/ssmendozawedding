@@ -33,20 +33,16 @@
     </style>
     <script>
 		jQuery(function(){
-      jQuery('#camera_wrap_0').camera({
+      var settings = {
         fx: 'scrollRight',
         loader: 'none',
         navigation: 'false',
         pagination: 'false',
         time: 1000,
-      });
-      jQuery('#camera_wrap_1').camera({
-        fx: 'scrollLeft',
-        loader: 'none',
-        navigation: 'false',
-        pagination: 'false',
-        time: 1000,
-      });
+      }
+      jQuery('#camera_wrap_0').camera(settings);
+      jQuery('#camera_wrap_1').camera(settings);
+      jQuery('#camera_wrap_2').camera(settings);
     });
 	</script>
   </head>
@@ -86,11 +82,18 @@
             </div>
           </div>
           <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              ENGAGEMENT PHOTOS HERE
+            <div class="camera_wrap" id="camera_wrap_2">
+              <div data-src="images/proposal/group_picture.jpg"></div>
+              <div data-src="images/proposal/down_on_knee.jpg"></div>
+              <div data-src="images/proposal/the_shock.jpg"></div>
+              <div data-src="images/proposal/kiss_after.jpg"></div>
+              <div data-src="images/proposal/shelby_excited.jpg"></div>
+              <div data-src="images/proposal/the_ring_in_hangs.jpg"></div>
+            </div>
           </header>
         </section>
         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-          <header class="mdl-layout--large-screen-only section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+          <header class="mdl-layout section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2750.6540222417493!2d-114.0523836844104!3d46.415914979123684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535ea22dec3445dd%3A0x3af06ed4ee3ee2cf!2s680+Home+Stretch+Dr%2C+Stevensville%2C+MT+59870!5e0!3m2!1sen!2sus!4v1460850739688" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
           </header>
           <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
