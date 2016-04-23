@@ -13,7 +13,7 @@ body::before {
 @media (max-width: 512px)  and (min-resolution: 1.5dppx),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('../images/standing_in_bushes_1024.jpg');
+    background-image: url('../images/proposal/pagoda_small.jpg');
   }
 }
 @media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -21,15 +21,33 @@ body::before {
        (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
   body::before {
-    background-image: url('../images/standing_in_bushes_2048.jpg');
+    background-image: url('../images/proposal/pagoda.jpg');
   }
 }
 
 html, body {
-  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-family: 'Italianno', 'Raleway', 'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
 }
+
+h1,h2,h3,h4,h5,h6,p{padding:0; font-family: 'Italianno', serif; font-weight: 500;}
+h1{font-size:5em;line-height:1.35;letter-spacing:-.02em;margin:24px 0}
+h2{font-size:4em;line-height:48px}
+h3{font-size:3em;line-height:40px}
+h4{font-size:2.5em;line-height:32px;-moz-osx-font-smoothing:grayscale;margin:24px 0 16px}
+h5{font-size:1.9em;letter-spacing:.04em}
+
+p, li {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.2em;
+}
+
+ul {
+  margin-bottom: .2em;
+  margin-top: .2em;
+}
+
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
